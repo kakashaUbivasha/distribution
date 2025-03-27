@@ -52,7 +52,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(EmailCampaign::class);
     }
-
+    public function emailSettings()
+    {
+        return $this->hasMany(EmailSetting::class);
+    }
 
 
 
